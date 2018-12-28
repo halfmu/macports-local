@@ -21,7 +21,7 @@ description         Term::Tmux::Layout (no description available)
 long_description    ${description}
 
 checksums           rmd160 0931ad8f2e2afefb473359a6000b63446199ab5d \
-                    sha256 9eebbacb0e47f6eb798144d7e6a16c2090453069f9836e84ec453dc67e7cc133<Paste>
+                    sha256 9eebbacb0e47f6eb798144d7e6a16c2090453069f9836e84ec453dc67e7cc133
 
 if {${perl5.major} != ""} {
     depends_build-append \
