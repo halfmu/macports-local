@@ -4,9 +4,9 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26
-perl5.setup         Term-Tmux-Layout 1.182062
-#perl5.setup         Term-Tmux-Layout 1.182062 ../by-authors/id/J/JM/JMASLAK
+perl5.branches      5.26 5.28
+perl5.setup         Term-Tmux-Layout 1.192431
+#perl5.setup         Term-Tmux-Layout 1.192431 ../by-authors/id/J/JM/JMASLAK
 
 platforms           darwin
 maintainers         nomaintainer
@@ -20,11 +20,12 @@ description         Term::Tmux::Layout (no description available)
 
 long_description    ${description}
 
-checksums           rmd160 0931ad8f2e2afefb473359a6000b63446199ab5d \
-                    sha256 9eebbacb0e47f6eb798144d7e6a16c2090453069f9836e84ec453dc67e7cc133
+checksums           rmd160 7b29a65050cf8f00dfd9c80abcb14c3d53f33ae3 \
+                    sha256 3d18ef6c008fcf9e0b9ed08cb9af91fed36fb02ddc3eee7b5fd893802eca7879
 
 if {${perl5.major} != ""} {
     depends_build-append \
+                    port:p${perl5.major}-test-useallmodules \
                     port:p${perl5.major}-time-out
     depends_lib-append \
                     port:p${perl5.major}-moose \
